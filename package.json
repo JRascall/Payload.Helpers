@@ -1,0 +1,15 @@
+{
+  "name": "payload.helpers",
+  "version": "0.0.1",
+  "description": "A helper library",
+  "scripts": {
+    "build": "tsc",
+    "test": "test"
+  },
+  "author": "Jamie Mascall",
+  "license": "MIT",
+  "homepage": "https://github.com/JRascall/Payload.Helpers#readme",
+  "devDependencies": {
+    "typescript": "^4.8.2"
+  }
+}
