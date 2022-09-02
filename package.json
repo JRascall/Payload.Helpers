@@ -1,7 +1,7 @@
 {
   "name": "payload.helpers",
   "version": "0.0.1",
-  "description": "A helper library",
+  "description": "A helper library for both backend and frontend development",
   "scripts": {
     "build": "tsc",
     "test": "test"
