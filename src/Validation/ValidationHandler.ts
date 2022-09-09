@@ -1,5 +1,5 @@
 import EmailValidator from "./EmailValidator";
-import type IValidator from "Validation/IValidator";
+import type IValidator from "./IValidator";
 import PhoneValidator from "./PhoneValidator";
 import RequiredValidator from "./RequiredValidator";
 import PostCodeValidator from "./PostCodeValidator";

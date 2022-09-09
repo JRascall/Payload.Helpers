@@ -1,4 +1,5 @@
-import type IValidator from "Validation/IValidator";
+import type IValidator from "./IValidator";
+
 export default class PhoneValidator implements IValidator {
     private readonly _sipRegex = /([^-=:][\w-]+[^.-]@[^.:-][.:\w-]+[^.:;-])/;
     private readonly _phoneRegex = /^\s*(?:\+?(\d{1,3}))?([-. (]*(\d{3})[-. )]*)?((\d{3})[-. ]*(\d{2,4})(?:[-.x ]*(\d+))?)\s*$/;

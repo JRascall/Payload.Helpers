@@ -1,4 +1,4 @@
-import type IValidator from "Validation/IValidator";
+import type IValidator from "./IValidator";
 
 export default class PostCodeValidator implements IValidator {
     private readonly _countryRegex = {

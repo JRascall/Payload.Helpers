@@ -1,4 +1,4 @@
-import type IValidator from "Validation/IValidator";
+import type IValidator from "./IValidator";
 
 export default class RequiredValidator implements IValidator {
     private readonly _regex = /^.*\S.*$/;
