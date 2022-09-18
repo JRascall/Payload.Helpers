@@ -10,4 +10,4 @@ export default class RequiredValidator implements IValidator {
 
         return this._regex.test(val.trim());
     }
-}
+}                                                                                                                                                                                                                                            
