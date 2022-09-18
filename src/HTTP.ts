@@ -1,4 +1,4 @@
-﻿import Hooks from "./Hook";
+﻿import type Hooks from "./Hook";
 
 export default class HTTP {
     constructor(

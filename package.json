@@ -1,6 +1,6 @@
 {
   "name": "payload.helpers",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A helper library for both backend and frontend development",
   "scripts": {
     "build": "tsc",
