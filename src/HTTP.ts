@@ -19,11 +19,18 @@ export default class HTTP {
                     self.hooks.Call("http.unauthorized");
                 }
 
+                let response = {
+                    status: xhttp.status,
+                    data: {}
+                };
+
                 try {
-                    cb(JSON.parse(xhttp.responseText));
+                    response.data = JSON.parse(xhttp.responseText);
                 } catch (e) {
-                    cb(xhttp.responseText);
+                    response.data = xhttp.responseText;
                 }
+
+                cb(response);
             }
         };
         xhttp.open("GET", address, true);
@@ -74,11 +81,18 @@ export default class HTTP {
                 if (this.status === 401) {
                     self.hooks.Call("http.unauthorized");
                 }
+                let response = {
+                    status: xhttp.status,
+                    data: {}
+                };
+
                 try {
-                    cb(JSON.parse(xhttp.responseText));
+                    response.data = JSON.parse(xhttp.responseText);
                 } catch (e) {
-                    cb(xhttp.responseText);
+                    response.data = xhttp.responseText;
                 }
+
+                cb(response);
             }
         };
         xhttp.open("POST", address, true);
@@ -131,11 +145,18 @@ export default class HTTP {
                 if (this.status === 401) {
                     self.hooks.Call("http.unauthorized");
                 }
+                let response = {
+                    status: xhttp.status,
+                    data: {}
+                };
+
                 try {
-                    cb(JSON.parse(xhttp.responseText));
+                    response.data = JSON.parse(xhttp.responseText);
                 } catch (e) {
-                    cb(xhttp.responseText);
+                    response.data = xhttp.responseText;
                 }
+
+                cb(response);
             }
         };
         xhttp.open("Delete", address, true);
